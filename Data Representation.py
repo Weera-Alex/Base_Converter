@@ -1,11 +1,12 @@
 letters = {
-    10:"A",
-    11:"B",
-    12:"C",
-    13:"D",
-    14:"E",
-    15:"F",
-    16:"G"
+    10: "A",
+    11: "B",
+    12: "C",
+    13: "D",
+    14: "E",
+    15: "F",
+    16: "G",
+    17: "H"
 
 }
 
@@ -29,7 +30,7 @@ while True:
     while result != 0:
         divisor = result/to_base
         remainder = ((divisor - int(divisor)) * to_base)
-        print(f"{result} / {to_base} = {divisor} - {int(divisor)} == {divisor - int(divisor)} * {to_base} = {remainder}")
+        print(f"{result} / {to_base} = {divisor} - {int(divisor)} = {divisor - int(divisor)} * {to_base} = {remainder}")
         remainder = round(remainder)
         if remainder in letters:
             remainder = letters.get(remainder)
